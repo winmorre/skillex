@@ -1,0 +1,17 @@
+@use "base";
+
+$main-profile-size: 100px;
+$active-profile-size: 60px;
+$profile-size: 40px;
+
+.Main-Profile{
+  @include base.profile-card($main-profile-size);
+}
+
+.Active-Profile{
+  @include base.profile-card($active-profile-size);
+}
+
+.Profile{
+  @include base.profile-card($profile-size);
+}

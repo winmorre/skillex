@@ -1,0 +1,63 @@
+$shade-background: #f8f4f0;
+$app-white: #ffffff;
+$lemon-green: #a2c587;
+$khaki: #f4d5b4;
+$nav-border-line: #f7f4f0;
+$text-color: #171525;
+$button-color: #1e1d2f;
+$unselected-text-color: #fcfaf7;
+$card-box-shadow-color: #bdc6d3;
+
+$default-radius: 10px;
+$default-text-size: 16px;
+$text-size-medium: 18px;
+$text-size-large: 24px;
+$text-size-x-large: 28px;
+$text-size-xx-large: 32px;
+$text-size-small: 14px;
+$text-size-x-small: 12px;
+$text-size-xx-small: 8px;
+
+$icon-size: 30px;
+
+@mixin button-box-shadow{
+  box-shadow: 4px 4px 8px $card-box-shadow-color;
+}
+
+@mixin app-button($height,$width){
+  height: $height;
+  width: $width;
+  color: $app-white;
+  border-radius: $default-radius;
+  background-color: $button-color;
+  text-align: center;
+}
+
+@mixin card-style{
+  @include button-box-shadow;
+  color: $text-color;
+}
+
+@mixin profile-card($size){
+  @include button-box-shadow;
+  width: $size;
+  height: $size;
+  border-radius: 20px;
+}
+
+@mixin mx-auto{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@mixin my-auto{
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+@mixin prefix($property,$value,$prefixes){
+  @each $prefix in $prefixes{
+    -#{$prefix}-#{$property}: $value;
+  }
+
+  #{$property}: $value;
+}

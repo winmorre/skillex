@@ -1,0 +1,36 @@
+.Search-Form {
+  background-color: #ffffff;
+  width: 300px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Search-Form input {
+  all: unset;
+  font: 18px system-ui;
+  color: #171525;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+.Search-Form ::placeholder {
+  color: #a2c587;
+  opacity: 0.7;
+}
+.Search-Form svg {
+  color: #282c34;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+.Search-Form button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+/*# sourceMappingURL=SearchWidget.css.map */

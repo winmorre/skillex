@@ -1,8 +1,15 @@
 import React from 'react'
 
-export function ProfileCard():React.ReactNode{
-    return <div>Profile Card</div>
+import "../css/ProfileCard.css";
+
+interface ProfileCardProp {
+    className: string;
+    imageUrl: string;
+    imageClassName: string;
 }
 
-// function expression
-export const OtherProfileCard:React.FC = () => <div>Another profile</div>
+export function ProfileCard({className, imageUrl, imageClassName}: ProfileCardProp): JSX.Element {
+    return <div className={className}>
+        <img src={imageUrl} alt="Profile image" className={imageClassName}/>
+    </div>
+}

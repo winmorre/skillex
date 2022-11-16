@@ -1,0 +1,23 @@
+@use "base" as base;
+
+$normal-height: 25px;
+$medium-height: 35px;
+$large-height: 45px;
+
+$normal-width: 35px;
+$medium-width: 50px;
+$large-width: 100px;
+
+.Normal-Button {
+  @include base.app-button($normal-height,$normal-width)
+}
+
+.Medium-Button{
+  @include  base.app-button($medium-height,$medium-width)
+}
+
+.Large-Button{
+  @include base.app-button($large-height,$large-width);
+  font:  base.$text-size-large system-ui;
+  color: base.$app-white;
+}

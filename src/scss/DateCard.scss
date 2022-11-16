@@ -1,0 +1,42 @@
+@use "base" as base;
+
+$default-date-box-size: 12px;
+%default-properties {
+  height: $default-date-box-size;
+  width: $default-date-box-size;
+  border-radius: base.$default-radius;
+  p {
+    font-size: base.$text-size-x-small;
+  }
+}
+
+.Active-Date-Card{
+  @include base.button-box-shadow;
+  @extend %default-properties;
+
+  background-color: base.$app-white;
+
+  .Day-Name {
+    color: base.$text-color;
+  }
+  .Day-Number {
+    color: base.$unselected-text-color;
+  }
+  .IsActive-Dot {
+    color: base.$button-color;
+    font-size: base.$text-size-medium;
+  }
+}
+
+.Unselected-Date-Card{
+  @extend %default-properties;
+  background-color: base.$nav-border-line;
+
+  .Day-Name {
+    color: #bdc6d3;
+  }
+  .Day-Number {
+    color: #282c34;
+  }
+
+}

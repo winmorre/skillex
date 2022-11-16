@@ -1,0 +1,30 @@
+.Normal-Button {
+  height: 25px;
+  width: 35px;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #1e1d2f;
+  text-align: center;
+}
+
+.Medium-Button {
+  height: 35px;
+  width: 50px;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #1e1d2f;
+  text-align: center;
+}
+
+.Large-Button {
+  height: 45px;
+  width: 100px;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: #1e1d2f;
+  text-align: center;
+  font: 24px system-ui;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=AppButton.css.map */

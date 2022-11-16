@@ -1,0 +1,42 @@
+@use 'base';
+
+%flex-property{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+%side-nav-properties{
+  margin-bottom: 5px;
+  font-size: base.$text-size-medium;
+}
+
+.Active-Side-Nav-Item{
+  @include base.mx-auto;
+  @extend %flex-property;
+  @extend %side-nav-properties;
+  color: base.$text-color;
+  font-weight: bold;
+
+  .Active-Side-Nav-Icon{
+    color: base.$lemon-green;
+    font-size: base.$icon-size !important;
+  }
+
+}
+
+.Side-Nav-Item{
+  @include base.mx-auto;
+  @extend %flex-property;
+  @extend %side-nav-properties;
+
+  color: base.$unselected-text-color;
+
+  .Side-Nav-Icon{
+    color: base.$nav-border-line;
+    font-size: base.$icon-size !important;
+  }
+}
