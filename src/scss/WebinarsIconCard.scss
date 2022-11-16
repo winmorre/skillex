@@ -1,0 +1,18 @@
+@use 'base';
+
+$icon-card-size: 40px;
+$icon-size:0.7em;
+
+.Webinar-Container{
+  height: $icon-card-size;
+  width: $icon-card-size;
+  border-radius: base.$default-radius;
+
+  .Webinar-Icon{
+    @include base.mx-auto;
+    @include base.my-auto;
+    font-size: $icon-size;
+    justify-content: center;
+    align-items: center;
+  }
+}

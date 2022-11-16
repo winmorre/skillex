@@ -1,0 +1,39 @@
+@use 'base';
+
+.Search-Form{
+  background-color: base.$app-white;
+  width: 300px;
+  height: 44px;
+  border-radius: base.$default-radius;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  input {
+    all: unset;
+    font: base.$text-size-medium system-ui;
+    color: base.$text-color;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+
+  ::placeholder{
+    color: base.$lemon-green;
+    opacity: 0.7;
+  }
+  svg{
+    color: #282c34;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+
+  }
+  button{
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+  }
+}

@@ -1,0 +1,23 @@
+.Nav-Column {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 250px;
+  max-height: 100%;
+  border-right: 3px solid #f7f4f0;
+  height: 80%;
+  background-color: transparent;
+  justify-content: center;
+}
+.Nav-Column .NC-Title-Dot {
+  color: #171525;
+  font-size: 18px;
+}
+.Nav-Column .User-Name {
+  justify-self: center;
+  text-transform: capitalize;
+  color: #171525;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=NavColumn.css.map */

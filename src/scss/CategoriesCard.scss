@@ -1,0 +1,28 @@
+@use 'base';
+
+$card-size: 45px;
+
+%default-categories-properties {
+  background-color: base.$app-white;
+  border-radius: base.$default-radius;
+  font-size: base.$text-size-small;
+  align-content: center;
+  height: $card-size;
+  width: $card-size;
+}
+
+.Categories-Card {
+  @include base.button-box-shadow;
+  @extend %default-categories-properties;
+  @include base.mx-auto;
+
+  .Category-Card-Text {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    text-transform: capitalize;
+  }
+
+  .Categories-Icon{
+    font-size: 30px;
+  }
+}

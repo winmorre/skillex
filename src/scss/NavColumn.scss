@@ -1,0 +1,25 @@
+@use 'base';
+
+
+.Nav-Column{
+  @include base.mx-auto;
+  max-width: 250px;
+  max-height: 100%;
+  border-right: 3px solid base.$nav-border-line;
+  height: 80%;
+  background-color: transparent;
+  justify-content: center;
+
+  .NC-Title-Dot{
+    color: base.$text-color;
+    font-size: 18px;
+  }
+
+  .User-Name{
+    justify-self: center;
+    text-transform: capitalize;
+    color: base.$text-color;
+    font-size: base.$text-size-medium;
+    font-weight: bold;
+  }
+}
