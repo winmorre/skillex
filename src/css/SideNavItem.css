@@ -1,0 +1,36 @@
+.Side-Nav-Item, .Active-Side-Nav-Item {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.Side-Nav-Item, .Active-Side-Nav-Item {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.Active-Side-Nav-Item {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  color: #171525;
+  font-weight: bold;
+}
+.Active-Side-Nav-Item .Active-Side-Nav-Icon {
+  color: #a2c587;
+  font-size: 30px !important;
+}
+
+.Side-Nav-Item {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  color: #fcfaf7;
+}
+.Side-Nav-Item .Side-Nav-Icon {
+  color: #f7f4f0;
+  font-size: 30px !important;
+}
+
+/*# sourceMappingURL=SideNavItem.css.map */

@@ -1,0 +1,22 @@
+.Main-Profile {
+  box-shadow: 4px 4px 8px #bdc6d3;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.Active-Profile {
+  box-shadow: 4px 4px 8px #bdc6d3;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.Profile {
+  box-shadow: 4px 4px 8px #bdc6d3;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=ProfileCard.css.map */

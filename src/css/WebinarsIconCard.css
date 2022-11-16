@@ -1,0 +1,16 @@
+.Webinar-Container {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+}
+.Webinar-Container .Webinar-Icon {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  font-size: 0.7em;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=WebinarsIconCard.css.map */
