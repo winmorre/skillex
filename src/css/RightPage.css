@@ -1,0 +1,13 @@
+.Right-Page {
+  background-color: #ffffff;
+}
+.Right-Page-Top-Icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+.Right-Page-Cards {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=RightPage.css.map */

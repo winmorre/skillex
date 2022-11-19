@@ -114,7 +114,7 @@ const data: Series[] = [
     },
 ]
 
-export function DynamicChart({}: DynamicChart): React.ReactNode {
+export function DynamicChart({}: DynamicChart): JSX.Element {
     const primaryAxis= React.useMemo(
         ():AxisOptions<DynamicChart> => ({
             getValue: datum => datum.days,

@@ -16,3 +16,9 @@ $profile-size: 40px;
   @include base.profile-card($profile-size);
 }
 
+.Top-Profile{
+  @include base.profile-card(20px);
+  display: flex;
+  gap: 0px;
+  padding-left: -5px;
+}

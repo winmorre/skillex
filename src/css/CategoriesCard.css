@@ -1,0 +1,24 @@
+.Categories-Card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-size: 14px;
+  align-content: center;
+  height: 45px;
+  width: 45px;
+}
+
+.Categories-Card {
+  box-shadow: 4px 4px 8px #bdc6d3;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.Categories-Card .Category-Card-Text {
+  padding-top: 5px;
+  padding-bottom: 3px;
+  text-transform: capitalize;
+}
+.Categories-Card .Categories-Icon {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=CategoriesCard.css.map */

@@ -1,0 +1,35 @@
+.Unselected-Date-Card, .Active-Date-Card {
+  height: 12px;
+  width: 12px;
+  border-radius: 10px;
+}
+.Unselected-Date-Card p, .Active-Date-Card p {
+  font-size: 12px;
+}
+
+.Active-Date-Card {
+  box-shadow: 4px 4px 8px #bdc6d3;
+  background-color: #ffffff;
+}
+.Active-Date-Card .Day-Name {
+  color: #171525;
+}
+.Active-Date-Card .Day-Number {
+  color: #fcfaf7;
+}
+.Active-Date-Card .IsActive-Dot {
+  color: #1e1d2f;
+  font-size: 18px;
+}
+
+.Unselected-Date-Card {
+  background-color: #f7f4f0;
+}
+.Unselected-Date-Card .Day-Name {
+  color: #bdc6d3;
+}
+.Unselected-Date-Card .Day-Number {
+  color: #282c34;
+}
+
+/*# sourceMappingURL=DateCard.css.map */
