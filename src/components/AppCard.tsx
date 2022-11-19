@@ -2,12 +2,11 @@ import React from 'react';
 
 type AppCardProp = {
     backgroundColor: string;
-    text?: string;
-    textSize?: string;
-    textColor?: string;
-    children: React.ReactNode;
+    child: JSX.Element;
 }
 
-export function AppCard({backgroundColor, text, textSize, textColor, children}: AppCardProp): React.ReactNode {
-    return <div></div>
+export function AppCard({backgroundColor, child}: AppCardProp): JSX.Element {
+    return <div className="App-Card" style={{backgroundColor:backgroundColor}}>
+        {child}
+    </div>
 }

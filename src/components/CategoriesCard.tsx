@@ -2,11 +2,11 @@ import React from "react";
 import {IconContext} from "react-icons";
 
 
-interface CategoriesCardProps {
-    icon?:React.ReactNode;
-    text?:string
-    iconColor:string;
-    onClick?: ()=>{}
+export interface CategoriesCardProps {
+    icon?: JSX.Element;
+    text?: string
+    iconColor: string;
+    onClick: any
 }
 
 function CategoriesCard({icon,text,iconColor,onClick}:CategoriesCardProps): JSX.Element {

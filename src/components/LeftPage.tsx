@@ -2,6 +2,10 @@ import React from 'react'
 import NavColumn from "./NavColumn";
 import {AppButton} from "./AppButton";
 import SpaceWidget from "./SpaceWidget";
+import CategoriesCard, {CategoriesCardProps} from "./CategoriesCard";
+import {FaBolt, FaEllipsisH, FaMusic, FaPencilRuler, FaShirtsinbulk, IoFastFood} from "react-icons/all";
+import {IconContext} from "react-icons";
+import {DynamicChart} from "./DynamicChart";
 
 function SearchWidget() {
     return <form role="search" id="form" className="Search-Form">
@@ -19,11 +23,19 @@ function SearchWidget() {
     </form>
 }
 
-function LeftPage(): JSX.Element {
+
+function ChartFigures({figure=0,text=""}):JSX.Element {
+    return <div className="Dynamic-Summary">
+        <h4 className="Dynamic-Summary-Figure">{figure}</h4>
+        <p className="Dynamic-Summary-Text">{text}</p>
+    </div>
+}
+
+export function LeftPage(): JSX.Element {
     return <div className="Left-Page">
         <NavColumn/>
         <div>
-            <SearchWidget />
+            <SearchWidget/>
 
             <h2>Good morning, </h2>
             <h2>Jane</h2>
@@ -34,13 +46,70 @@ function LeftPage(): JSX.Element {
 
             <SpaceWidget height="10px"/>
 
-            <AppButton onClick={()=>{}} text="See Suggestions" className="Large-Button"/>
+            <AppButton onClick={() => {
+            }} text="See Suggestions" className="Large-Button"/>
 
-            <h4>Categories</h4>
+            <div className="Left-Page-Categories-Title">
+                <h4 className="Left-Page-Categories-Title-Text">Categories</h4>
+                <IconContext.Provider value={{ color:"#605858",className:"Left-Page-Categories-Title-Icon"}}>
+                    <div>
+                        <FaEllipsisH />
+                    </div>
+                </IconContext.Provider>
+
+            </div>
+
+            <div className="Left-Page-Categories-Items">
+                {
+                    categories.map(item => <CategoriesCard icon={item.icon} iconColor={item.iconColor} text={item.text}
+                                                           onClick={item.onClick}/>)
+                }
+            </div>
+
+            <SpaceWidget height="10px"/>
+
+            <div className="Dynamic">
+                <h4 className="Dynamic-Title-Text">Dynamic</h4>
+
+                <div className="Dynamic-Chart">
+                    <DynamicChart />
+                    <div className="Dynamic-Chart-Summary">
+                        {
+                            chartSummary.map(item=> <ChartFigures figure={item.figure} text={item.text}/>)
+                        }
+                    </div>
+                </div>
+            </div>
 
 
         </div>
     </div>
 }
 
-const categories = [];
+const categories: CategoriesCardProps[] = [
+    {
+        icon: <FaPencilRuler/>, iconColor: "#efa65c", text: "Writing", onClick: () => {
+        }
+    },
+    {
+        icon: <FaShirtsinbulk/>, iconColor: "#efa65c", text: "Lifestyle", onClick: () => {
+        }
+    },
+    {
+        icon: <IoFastFood/>, iconColor: "#efa65c", text: "Food", onClick: () => {
+        }
+    },
+    {
+        icon: <FaMusic/>, iconColor: "#efa65c", text: "Music", onClick: () => {
+        }
+    },
+    {
+        icon: <FaBolt/>, iconColor: "#efa65c", text: "Writing", onClick: () => {
+        }
+    },
+];
+
+const chartSummary=[
+    {figure:78,text:"Your points"},
+    {figure:52,text:"Average"},
+]

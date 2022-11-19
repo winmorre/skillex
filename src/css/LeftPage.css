@@ -1,0 +1,55 @@
+.Left-Page {
+  display: flex;
+  flex-direction: row;
+  background-color: #f8f4f0;
+  width: 70%;
+  height: 100%;
+}
+.Left-Page-Categories-Title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.Left-Page-Categories-Title-Text {
+  font-size: 18px;
+  color: #171525;
+  font-weight: 600;
+}
+.Left-Page-Categories-Title-Icon {
+  font-size: 28px;
+}
+.Left-Page-Categories-Items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+  max-width: 70%;
+}
+
+.Dynamic-Chart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+.Dynamic-Chart-Summary {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+.Dynamic-Summary {
+  justify-content: center;
+}
+.Dynamic-Summary-Figure {
+  color: #171525;
+  font-size: 18px;
+  font-weight: 600;
+}
+.Dynamic-Summary-Text {
+  color: #605858;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=LeftPage.css.map */

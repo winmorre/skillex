@@ -1,0 +1,68 @@
+@use 'base';
+
+
+.Left-Page{
+  display: flex;
+  flex-direction: row;
+  background-color: base.$shade-background;
+  width: 70%;
+  height: 100%;
+
+  &-Categories-Title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    &-Text{
+      font-size: base.$text-size-medium;
+      color: base.$text-color;
+      font-weight: 600;
+    }
+
+    &-Icon{
+      font-size: 28px;
+    }
+
+  }
+
+  &-Categories-Items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    max-width: 70%;
+  }
+}
+
+.Dynamic{
+
+  &-Chart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  &-Chart-Summary{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+  }
+
+   &-Summary{
+     justify-content: center;
+
+     &-Figure{
+       color: base.$text-color;
+       font-size: base.$text-size-medium;
+       font-weight: 600;
+     }
+
+     &-Text{
+       color: #605858;
+       font-size: base.$text-size-small;
+     }
+   }
+}

@@ -1,0 +1,13 @@
+@use 'base';
+.Right-Page{
+  background-color: base.$app-white;
+  &-Top-Icons{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+  &-Cards{
+    background-color: transparent;
+  }
+}
